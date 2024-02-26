@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        body {
+            background-color: rgb(197, 63, 175); 
+        }
+
+        #divContainer {
+            text-align: center;
+            position: relative;
+        }
+
+        .redText {
+            color: red;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .redText:hover {
+            color: rgb(43, 89, 226);
+        }
+
+        #btnlogin {
+            background-color: blue; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-bottom: 20px; 
+        }
+
+        #btnlogin:hover {
+            background-color: darkblue;
+        }
+
+        h1:hover {
+            color: rgb(43, 89, 226);
+        }
+
+        #myImage {
+            width: 200px; 
+            height: auto; 
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="divContainer">
+        <h1> Login </h1>
+        <input type="text" placeholder="Username" id="txtUsername" class="redText">
+        <input type="text" placeholder="Password" id="txtPassword" class="redText">
+        <div style="margin-top: 1rem;">
+            <button id="btnlogin" onclick="alert('Login successfully')">Login</button>
+        </div>
+        <img id="myImage" src="c:\Users\Admin\Downloads\blackpink.png" alt="Your Image">
+    </div>
+</body>
+</html>
